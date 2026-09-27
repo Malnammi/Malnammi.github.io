@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research · Moayad Alnammi</title>
+  <meta name="description" content="Research by Moayad Alnammi in applied machine learning across drug discovery, manufacturing, and engineering, with publications, advised theses, and funded projects.">
+  <meta property="og:title" content="Research · Moayad Alnammi">
+  <meta property="og:description" content="Applied machine learning across drug discovery, manufacturing, and engineering. Publications, advised theses, and funded projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://malnammi.github.io/research.html">
+  <meta property="og:image" content="https://malnammi.github.io/assets/img/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Moayad Alnammi, Ph.D., Assistant Professor of Computer Science">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://malnammi.github.io/research.html">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main">
+    <a class="brand" href="index.html"><img src="assets/img/wordmark.svg" alt="Moayad Alnammi" width="190" height="30"></a>
+    <a href="index.html">About</a>
+    <a href="courses/index.html">Courses</a>
+    <a href="research.html" aria-current="page">Research</a>
+    <a href="expertise.html">Expertise</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Research</h1>
+
+  <p>My research leans into applied machine learning. I like taking a
+  real scientific or engineering problem and carrying it from the first
+  framing of the question to a working pipeline with results that can be
+  trusted and reproduced.</p>
+
+  <p>The first thread of my work is chemistry and drug discovery. My
+  doctoral work at the University of Wisconsin–Madison focused on
+  iterative batched screening and active learning for early-stage drug
+  discovery. The idea is to use models to decide which compounds to test
+  next when experiments are expensive and budgets are finite. With my
+  students I have continued this line into chemical space visualization
+  and protein-ligand models for virtual screening.</p>
+
+  <p>Two results show what this looks like in practice. A random forest
+  trained on about 430,000 screened compounds, with its predictions
+  spread across 18 compute nodes, scored a synthesize-on-demand library
+  of over one billion compounds in under three days. Of the 68 compounds
+  it selected for testing, 31 were confirmed hits, a hit rate of about
+  46%. For iterative screening I designed a cluster-based selection
+  strategy and benchmarked it on 107 target datasets. In a prospective
+  screen on a new target, it recovered 20% of all hits after testing
+  only 4% of the compound pool. The code for these projects is available
+  in the
+  <a href="https://github.com/gitter-lab/active-learning-drug-discovery"
+  target="_blank" rel="noopener">active-learning-drug-discovery</a>
+  repository.</p>
+
+  <figure class="research-fig">
+    <img class="bare" src="assets/img/research-screening.svg" alt="Two panels comparing screening strategies. In one-round screening, a model trained on tested compounds ranks the untested pool and the top 1,536 compounds are screened once. In iterative batched screening, the model selects a batch of 96 compounds, the screening results are added to the training set, the batch is removed from the pool, and the cycle repeats until the budget is spent." width="1040" height="492">
+    <figcaption>One-round screening compared with iterative batched
+    screening. Both train a model on tested compounds and rank the
+    untested pool. One-round screening tests the top-ranked compounds
+    once. Iterative batched screening tests a small batch, learns from
+    the results, and repeats.</figcaption>
+  </figure>
+
+  <figure class="research-fig">
+    <img class="bare" src="assets/img/research-chemical-space.svg" alt="Schematic of chemical space visualization. Compounds appear as points in a two-dimensional space, colored as active, inactive, or untested, and grouped in clusters. Two structurally similar compounds, a morpholine analog and a methoxyphenyl piperazine analog that share a benzoyl chlorophenyl acetamide scaffold, sit next to each other in an active cluster. A phosphorothioate with three menthyl groups, a different scaffold, sits in a distant cluster." width="1040" height="500">
+    <figcaption>A schematic of chemical space visualization. Each point is
+    a compound, placed so that structurally similar compounds sit close
+    together. The two analogs at the top share a scaffold and land side
+    by side, while the compound on the left sits in a distant
+    region.</figcaption>
+  </figure>
+
+  <p>The second thread is manufacturing and operations. With
+  collaborators at KFUPM and the University of Windsor I work on
+  generative computer-aided process planning and on reinforcement
+  learning for flexible job shop scheduling.</p>
+
+  <figure class="research-fig">
+    <img class="bare" src="assets/img/research-capp-gpt.svg" alt="Architecture diagram of CAPP-GPT. The part's CAD data, a B-Rep graph and a CSG tree, is pre-processed into part embeddings. A part encoder turns these into geometric and processing feature encodings, which feed every block of a plan decoder. The decoder predicts the next processing feature token from the plan tokens so far, appends it, and repeats until an end-of-sequence token." width="1040" height="516">
+    <figcaption>The CAPP-GPT architecture. A part encoder turns the part's
+    CAD data into feature encodings. A plan decoder uses them to generate
+    the process plan one token at a time.</figcaption>
+  </figure>
+
+  <p>Beyond these two threads I have worked on supply-chain risk
+  prediction, subsurface property prediction for reservoir engineering,
+  and low-cost digital twin instrumentation. Most of this work is
+  hands-on. I am involved in implementing the algorithms, building the
+  data pipelines, and running large hyperparameter searches on compute
+  clusters when the problem calls for it.</p>
+
+  <h2>2026 / In progress</h2>
+  <ul class="pub-list">
+    <li>Maha AlShammari, <strong>Moayad Alnammi</strong>, Moataz Ahmed.
+    “Chemical Space Visualization at Scale: A Survey of End-to-End
+    Pipelines and Dataset-Size Archetypes.” Journal of Cheminformatics
+    (2026).
+    <a href="https://link.springer.com/article/10.1186/s13321-026-01223-4"
+    target="_blank" rel="noopener">Article</a></li>
+
+    <li>Shirin Shahsavary, <strong>Moayad Alnammi</strong>, Javad
+    Navaei, Ahmed Azab. “Risk Prediction in Design of Distributed Supply
+    Chains Using Machine-Learning: A Bi-Objective Optimal Approach.”
+    IEEE Access 14, 77958–77982 (2026).
+    <a href="https://doi.org/10.1109/ACCESS.2026.3694980"
+    target="_blank" rel="noopener">DOI</a></li>
+
+    <li>Hassan Mohamed, <strong>Moayad Alnammi</strong>, Ahmed Azab.
+    “Hybrid CNN-Graph Transformer Encoder with Autoregressive Decoding
+    for CAPP-GPT.” Manufacturing Letters, in press (2026). Presented at
+    the 54th SME North American Manufacturing Research Conference
+    (NAMRC 54), 2026.</li>
+
+    <li>Osamah Hussein, <strong>Moayad Alnammi</strong>, Ahmed Azab.
+    “Cooperative Metaheuristic Approaches for Solving the Flexible Job
+    Shop Scheduling Problem: A Sensitivity Analysis of the Search
+    Parameters via an Actor-Critic PPO Reinforcement Learning.” NAMRC 54
+    (2026).</li>
+
+    <li>Bayan Aldahlawi, <strong>Moayad Alnammi</strong>, Abdulazeez
+    Abdulraheem, Irfan Ahmad. “Exhaustive Feature Subset Screening
+    Yields an Empirical Cost and Accuracy Pareto Frontier for Carbonate
+    Permeability Prediction.” In revision, Scientific Reports.</li>
+  </ul>
+
+  <h2>2025</h2>
+  <ul class="pub-list">
+    <li>Adil Ahmed Bhameshan, <strong>Moayad Alnammi</strong>, Ammar
+    Mohammed Alshammari. “Automation and Digitization of Falling Head
+    Tests for Precise Hydraulic Conductivity Measurement.” ISEC 2025.
+    <a href="https://www.isec-society.org/ISEC_PRESS/ISEC_2025/xml/GFE-12.xml"
+    target="_blank" rel="noopener">Article</a></li>
+
+    <li>Ahmed Azab, <strong>Moayad Alnammi</strong>, Hany Osman, Fazle
+    Baki. “CAPP-GPT: A Large Multimodal Model via a Custom
+    Encoder-Decoder Architecture for Macro-Computer Aided Process
+    Planning.” TechRxiv preprint (2025).
+    <a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.174831482.26940243/v1"
+    target="_blank" rel="noopener">Preprint</a></li>
+  </ul>
+
+  <h2>2023</h2>
+  <ul class="pub-list">
+    <li><strong>Moayad Alnammi</strong>, Shengchao Liu, Spencer S.
+    Ericksen, Gene E. Ananiev, Andrew F. Voter, Song Guo, James L. Keck,
+    F. Michael Hoffmann, Scott A. Wildman, Anthony Gitter. “Evaluating
+    Scalable Supervised Learning for Synthesize-on-Demand Chemical
+    Libraries.” Journal of Chemical Information and Modeling 63(17),
+    5513–5528.
+    <a href="https://doi.org/10.1021/acs.jcim.3c00912"
+    target="_blank" rel="noopener">DOI</a></li>
+  </ul>
+
+  <h2>2019</h2>
+  <ul class="pub-list">
+    <li>Shengchao Liu*, <strong>Moayad Alnammi</strong>*, Spencer S.
+    Ericksen, Andrew F. Voter, Gene E. Ananiev, James L. Keck, F. Michael
+    Hoffmann, Scott A. Wildman, Anthony Gitter. “Practical Model Selection
+    for Prospective Virtual Screening.” Journal of Chemical Information
+    and Modeling 59(1), 282–293. (* equal contribution)
+    <a href="https://doi.org/10.1021/acs.jcim.8b00363"
+    target="_blank" rel="noopener">DOI</a></li>
+  </ul>
+
+  <h2>Current Students</h2>
+  <ul class="pub-list">
+    <li>Hassan Mohamed. Ph.D. student. Deep generative models for
+    computer-aided process planning (CAPP-GPT).</li>
+
+    <li>Maha AlShammari. Ph.D. student. Chemical space
+    visualization.</li>
+  </ul>
+
+  <h2>Advised Theses</h2>
+  <ul class="pub-list">
+    <li>Bayan Aldahlawi. “Cost Optimized Machine Learning for Predicting
+    Permeability in Heterogeneous Carbonate Reservoirs.” M.S. thesis,
+    KFUPM (2026).
+    <a href="https://eprints.kfupm.edu.sa/id/eprint/144382/"
+    target="_blank" rel="noopener">Record</a></li>
+
+    <li>Oulaya Elargab. “UPL-GAT: Unified Protein-Ligand Graph Attention
+    Networks in Virtual Screening.” M.S. thesis, KFUPM (2026).
+    <a href="https://eprints.kfupm.edu.sa/id/eprint/144370/"
+    target="_blank" rel="noopener">Record</a></li>
+
+    <li>Adil Ahmed Bhameshan. “Low-Cost Digital Twin System for
+    Hydraulic Conductivity Monitoring with Environmental Variations.”
+    M.S. thesis, KFUPM (2025).
+    <a href="https://eprints.kfupm.edu.sa/id/eprint/143842/"
+    target="_blank" rel="noopener">Record</a></li>
+  </ul>
+
+  <h2>Advised Master's Projects</h2>
+  <ul class="pub-list">
+    <li>Turki Alsadhan. “Agentic MLOps: Agentic Control Plane for
+    Diagnosis-Guided Drift Response in Production ML Systems.”
+    Professional master's project, High Performance and Cloud Computing,
+    KFUPM. In progress (2026).</li>
+
+    <li>Faisal Alzhrani. “Real-Time GPU Particle-Based Fluid Simulation
+    with Vision-Based Hand Interaction.” Professional master's project,
+    M.S. in Visual Computing, KFUPM (2026).</li>
+  </ul>
+
+  <h2>Funded Projects</h2>
+  <ul class="pub-list">
+    <li>“Generative Computer-Aided Process Planning: A Sustainable
+    Integrated Operations Research and Predictive Analytics Approach for
+    Hybrid Production.” Interdisciplinary Research Center for Smart
+    Mobility and Logistics, KFUPM. PI Ahmed Azab, Co-I
+    <strong>Moayad Alnammi</strong>.
+    <a href="https://ri.kfupm.edu.sa/irc-sml/research/project-details/generative-computer-aided-process-planning-a-sustainable-integrated-operations-research-and-predictive-analytics-approach-for-hybrid-production"
+    target="_blank" rel="noopener">Project page</a></li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Dr. Moayad Alnammi · <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#97;&#121;&#97;&#100;&#97;&#108;&#110;&#97;&#109;&#109;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#97;&#121;&#97;&#100;&#97;&#108;&#110;&#97;&#109;&#109;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+    <p>© Moayad Alnammi.</p>
+  </div>
+</footer>
+</body>
+</html>

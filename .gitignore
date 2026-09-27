@@ -1,0 +1,13 @@
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Never commit working documents. These live OUTSIDE this folder by design
+# (PLAN.txt, SLIDES-PASS.txt, courses-content/, tools/), listed here as a
+# safety net in case they are ever copied in by accident.
+PLAN.txt
+SLIDES-PASS.txt
+courses-content/
+tools/
+~$*.pptx
+*.pptx

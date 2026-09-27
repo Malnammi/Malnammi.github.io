@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- If a custom domain is enabled later, replace malnammi.github.io below. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://malnammi.github.io/</loc></url>
+  <url><loc>https://malnammi.github.io/expertise.html</loc></url>
+  <url><loc>https://malnammi.github.io/research.html</loc></url>
+  <url><loc>https://malnammi.github.io/courses/</loc></url>
+  <url><loc>https://malnammi.github.io/courses/intro-ai/</loc></url>
+  <url><loc>https://malnammi.github.io/courses/ml/</loc></url>
+</urlset>

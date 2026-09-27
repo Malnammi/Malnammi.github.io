@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction to Artificial Intelligence · Moayad Alnammi</title>
+  <meta name="description" content="Introduction to Artificial Intelligence course by Moayad Alnammi with schedule, slides, and recorded lectures under CC BY-NC-SA 4.0.">
+  <meta property="og:title" content="Introduction to Artificial Intelligence · Moayad Alnammi">
+  <meta property="og:description" content="Course schedule with slides and recorded lectures, published under CC BY-NC-SA 4.0.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://malnammi.github.io/courses/intro-ai/">
+  <meta property="og:image" content="https://malnammi.github.io/assets/img/og-intro-ai.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Introduction to Artificial Intelligence course materials by Moayad Alnammi">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://malnammi.github.io/courses/intro-ai/">
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main">
+    <a class="brand" href="../../index.html"><img src="../../assets/img/wordmark.svg" alt="Moayad Alnammi" width="190" height="30"></a>
+    <a href="../../index.html">About</a>
+    <a href="../index.html" aria-current="page">Courses</a>
+    <a href="../../research.html">Research</a>
+    <a href="../../expertise.html">Expertise</a>
+    <a href="../../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1 class="course-heading"><img class="course-icon" src="../../assets/img/icon-intro-ai.svg" alt="" width="48" height="48">Introduction to Artificial Intelligence</h1>
+
+  <p>An introductory course for undergraduates. It covers agents, search,
+    games, knowledge representation, reasoning under uncertainty, basics of machine learning, and image processing. It
+    closes with an overview of reinforcement learning.</p>
+
+  <section aria-label="Materials and license">
+    <h2>Materials &amp; license</h2>
+    <div class="license-block">
+      <p>The slides, examples, and recordings below were authored by
+      Dr. Moayad Alnammi. Some decks adapt material from other
+      sources. Those sources are credited on the attribution slide
+      (slide 2) of each deck. Their portions remain © their original
+      authors and are used with permission or under their stated
+      educational-use terms. My original content is licensed
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+      You may share and adapt it with attribution for non-commercial
+      purposes under the same license. Any reuse or adaptation must keep
+      the attribution slide and the footer credits intact. To request any
+      other use, email me at
+      <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#97;&#121;&#97;&#100;&#97;&#108;&#110;&#97;&#109;&#109;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#97;&#121;&#97;&#100;&#97;&#108;&#110;&#97;&#109;&#109;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>. 
+    </p>
+    <p>
+      I have
+      tried to credit all adapted material on the attribution slide of
+      each deck. If you believe something here should carry additional
+      credit or should not be published, please email me and I will
+      correct it promptly.</p>
+    </div>
+  </section>
+
+  <section aria-label="Schedule">
+    <h2>Schedule</h2>
+    <p>All lecture videos are also available as one
+    <a href="https://www.youtube.com/playlist?list=PLmoyuMT853YGAjJ6L8le3Tr0M6S5Y3Oys"
+    target="_blank" rel="noopener">YouTube playlist</a>.</p>
+    <div class="table-scroll">
+      <table class="schedule">
+        <thead>
+          <tr><th>#</th><th>Topic</th><th>Slides (PDF)</th><th>Lecture Video</th><th>Sample Code</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Introduction to AI</td><td><a href="slides/intro-ai-01-intro-to-ai.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=mvpkKS0nbj4" target="_blank" rel="noopener">YouTube</a></td><td>—</td></tr>
+          <tr><td>2</td><td>Agents and Environments</td><td><a href="slides/intro-ai-02-agents-and-environments.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=FnCo_6ZZEz0" target="_blank" rel="noopener">YouTube</a></td><td>—</td></tr>
+          <tr><td>3</td><td>Uninformed Search</td><td><a href="slides/intro-ai-03-searching-uninformed.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=RIzcqHuI9K0" target="_blank" rel="noopener">Part 1</a><br><a href="https://www.youtube.com/watch?v=-G6Afx17Na0" target="_blank" rel="noopener">Part 2</a></td><td><a href="code/sliding_block.py">sliding_block.py</a> · <a href="code/test_sliding_block.py">test_sliding_block.py</a> · <a href="code/grid_painter_sol.py">grid_painter_sol.py</a> · <a href="code/search_algorithms.py">search_algorithms.py</a></td></tr>
+          <tr><td>4</td><td>Informed Search</td><td><a href="slides/intro-ai-04-searching-informed.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=gSCEUCOyWMI" target="_blank" rel="noopener">Part 1</a><br><a href="https://www.youtube.com/watch?v=cCalUs-xi0c" target="_blank" rel="noopener">Part 2</a></td><td><a href="code/search_algorithms.py">search_algorithms.py</a></td></tr>
+          <tr><td>5</td><td>Local Search</td><td><a href="slides/intro-ai-05-local-search.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=LnJG-CcRm-Q" target="_blank" rel="noopener">YouTube</a></td><td><a href="code/nqueens.py">nqueens.py</a></td></tr>
+          <tr><td>6</td><td>Constraint Satisfaction Problems</td><td><a href="slides/intro-ai-06-csp.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=E9j8bZTdIHs" target="_blank" rel="noopener">Part 1</a><br><a href="https://www.youtube.com/watch?v=AMjlfM4B-5I" target="_blank" rel="noopener">Part 2</a></td><td><a href="code/csp_graphcolor.py">csp_graphcolor.py</a> · <a href="code/backtracking.py">backtracking.py</a></td></tr>
+          <tr><td>7</td><td>Adversarial Search and Games</td><td><a href="slides/intro-ai-07-adversarial-search-and-games.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=zZGc4uigV4E" target="_blank" rel="noopener">Part 1</a><br><a href="https://www.youtube.com/watch?v=TbJmDIedRJc" target="_blank" rel="noopener">Part 2</a></td><td>—</td></tr>
+          <tr><td>8</td><td>Knowledge-Based Agents</td><td><a href="slides/intro-ai-08-kba.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=APY3MEHKiYs" target="_blank" rel="noopener">YouTube</a></td><td>—</td></tr>
+          <tr><td>9</td><td>Knowledge-Based Agents and First-Order Logic</td><td><span class="soon">coming soon</span></td><td><a href="https://www.youtube.com/watch?v=YHc9U_PXWr4" target="_blank" rel="noopener">YouTube</a></td><td>—</td></tr>
+          <tr><td>10</td><td>Other Searches and Planning</td><td><a href="slides/intro-ai-10-other-searches-and-planning.pdf">PDF</a></td><td>—</td><td><a href="code/air-cargo-domain.pddl">air-cargo-domain.pddl</a> · <a href="code/air-cargo-problem.pddl">air-cargo-problem.pddl</a> · <a href="code/gridworld-nav-domain.pddl">gridworld-nav-domain.pddl</a> · <a href="code/gridworld-nav-3x3-problem.pddl">gridworld-nav-3x3-problem.pddl</a></td></tr>
+          <tr><td>11</td><td>Acting Under Uncertainty</td><td><a href="slides/intro-ai-11-acting-under-uncertainty.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=4RkdPGHoVsM" target="_blank" rel="noopener">Part 1</a><br><a href="https://www.youtube.com/watch?v=2bzT5iWiBJE" target="_blank" rel="noopener">Part 2</a></td><td><a href="code/probability.py">probability.py</a> · <a href="code/fulljoint_example.py">fulljoint_example.py</a> · <a href="code/alarm_bn.py">alarm_bn.py</a></td></tr>
+          <tr><td>12</td><td>Machine Learning I</td><td><a href="slides/intro-ai-12-machine-learning-i.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=xIhZSbwju80" target="_blank" rel="noopener">YouTube</a></td><td>—</td></tr>
+          <tr><td>13</td><td>Machine Learning II</td><td><a href="slides/intro-ai-13-machine-learning-ii.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=xF4zCAaKKx8" target="_blank" rel="noopener">YouTube</a></td><td>—</td></tr>
+          <tr><td>14</td><td>Image Processing &amp; Computer Vision</td><td><a href="slides/intro-ai-14-ipcv.pdf">PDF</a></td><td>—</td><td>—</td></tr>
+          <tr><td>15</td><td>Reinforcement Learning</td><td><a href="slides/intro-ai-15-rl.pdf">PDF</a></td><td><a href="https://www.youtube.com/watch?v=S-bmq7vf3kA" target="_blank" rel="noopener">Part 1</a><br><a href="https://www.youtube.com/watch?v=4NcBkSpw50Y" target="_blank" rel="noopener">Part 2</a></td><td><a href="code/gridworld.py">gridworld.py</a> · <a href="code/random_runner.py">random_runner.py</a> · <a href="code/vi_runner.py">vi_runner.py</a> · <a href="code/q_learning_runner.py">q_learning_runner.py</a> · <a href="code/ml_runner.py">ml_runner.py</a></td></tr>
+          <tr><td>16</td><td>Other AI Fields</td><td><a href="slides/intro-ai-16-other-ai-fields.pdf">PDF</a></td><td>—</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-label="Practice sets">
+    <h2>Practice Sets</h2>
+    <p>Practice problems with some solutions.</p>
+    <ul>
+      <li><a href="practice/practice_set_1.pdf">Practice Set 1</a> · search topics</li>
+      <li><a href="practice/practice_set_2.pdf">Practice Set 2</a> · constraint satisfaction and mid-course topics</li>
+      <li><a href="practice/practice_set_3.pdf">Practice Set 3</a> · uncertainty and late-course topics</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Dr. Moayad Alnammi · <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#97;&#121;&#97;&#100;&#97;&#108;&#110;&#97;&#109;&#109;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#97;&#121;&#97;&#100;&#97;&#108;&#110;&#97;&#109;&#109;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+    <p>© Moayad Alnammi.</p>
+  </div>
+</footer>
+</body>
+</html>
